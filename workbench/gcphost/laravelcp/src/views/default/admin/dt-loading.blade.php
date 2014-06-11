@@ -1,0 +1,1 @@
+<p class="datatable-loading label label-default"><i class="fa fa-lg fa-refresh fa-spin"></i> {{{ Lang::get('Laravelcp::core.loading') }}} ...</p>
