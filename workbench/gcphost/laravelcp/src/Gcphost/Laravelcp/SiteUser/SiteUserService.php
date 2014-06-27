@@ -1,6 +1,8 @@
-<?php namespace Gcphost\Laravelcp;
-use Gcphost\Laravelcp\UserService as User;
+<?php namespace Gcphost\Laravelcp\SiteUser;
+use Gcphost\Laravelcp\User\UserService as User;
 use Zizaco\Confide\ConfideUser;
+use Gcphost\Laravelcp\Theme;
+
 use App, Redirect,Validator, Input, Auth, Confide,Lang, Event, Activity, Setting;
 
 class SiteUserService {

@@ -1,6 +1,7 @@
 <?php namespace Gcphost\Laravelcp\User;
 
 use Setting,Redirect,Session,Event,Activity,Auth,Confide,UserNotes,Input, DB;
+use Gcphost\Laravelcp\User;
 
 class EloquentUserRepository implements UserRepository
 {

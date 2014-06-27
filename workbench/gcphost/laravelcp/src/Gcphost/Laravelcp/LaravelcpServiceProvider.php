@@ -19,7 +19,7 @@ class LaravelcpServiceProvider extends ServiceProvider {
 	public function boot()
 	{
 		$this->package('Gcphost/Laravelcp');
-
+        //require __DIR__ .'/../../routes.php';
 		\View::addNamespace('Laravelcp', __DIR__.'/../../Views');
 
 		$this->app->bind('command.install_laravelcp', function($app) {

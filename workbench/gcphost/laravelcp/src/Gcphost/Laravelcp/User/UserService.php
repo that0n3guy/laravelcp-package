@@ -1,7 +1,9 @@
-<?php namespace Gcphost\Laravelcp;
-use Gcphost\Laravelcp\Role;
+<?php namespace Gcphost\Laravelcp\User;
 
 use DB, Auth, Activity, Confide, Event, Session, Redirect;
+use Gcphost\Laravelcp\User;
+use Gcphost\Laravelcp\Permission;
+use Gcphost\Laravelcp\Role;
 
 class UserService {
     protected $user;

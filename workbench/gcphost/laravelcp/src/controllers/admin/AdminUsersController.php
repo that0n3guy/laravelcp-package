@@ -1,4 +1,7 @@
 <?php namespace Gcphost\Laravelcp;
+
+use Gcphost\Laravelcp\User\UserService;
+
 class AdminUsersController extends BaseController {
     protected $service;
 
