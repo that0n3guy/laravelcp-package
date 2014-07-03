@@ -1,39 +1,47 @@
 {
-	"name": "laravel/laravel",
-	"description": "The Laravel Framework.",
-	"keywords": ["framework", "laravel"],
-	"license": "MIT",
-	"require": {
-		"laravel/framework": "4.1.*"
-	},
-	"autoload": {
-		"classmap": [
-			"app/commands",
-			"app/controllers",
-			"app/models",
-			"app/database/migrations",
-			"app/database/seeds",
-			"app/tests/TestCase.php"
-		]
-	},
-	"psr-0": {
-	    "Gcphost\\Laravelcp": "workbench/gcphost/laravecp/src/"
-	},
-	"scripts": {
-		"post-install-cmd": [
-			"php artisan clear-compiled",
-			"php artisan optimize"
-		],
-		"post-update-cmd": [
-			"php artisan clear-compiled",
-			"php artisan optimize"
-		],
-		"post-create-project-cmd": [
-			"php artisan key:generate"
-		]
-	},
-	"config": {
-		"preferred-install": "dist"
-	},
-	"minimum-stability": "stable"
+    "name": "gcphost/laravelcp",
+    "description": "Laravel 4 Bootstrap Admin Site",
+    "keywords": ["laravel","Starter Site", "Admin Site", "Portal"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "William Bowman",
+            "email": "gcphost@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0",
+        "illuminate/support": "4.1.*",
+	"zizaco/confide": "dev-master",
+	"zizaco/entrust": "dev-master",
+	"anlutro/l4-settings": "dev-master",
+	"bllim/datatables": "*",
+	"thomaswelton/laravel-gravatar": "dev-master",
+	"khill/lavacharts" : "dev-master",
+	"regulus/activity-log": "dev-master",
+	"raahul/larryfour": "1.*",
+	"hybridauth/hybridauth": "*",
+	"msurguy/honeypot": "dev-master",
+	"liebig/cron": "dev-master",
+	"atticmedia/anvard": "dev-master",
+	"gcphost/bootstrap3": "dev-master",
+	"pda/pheanstalk": "2.0.*"
+
+    },
+    "autoload": {
+        "classmap": [
+		"src/commands",
+		"src/controllers",
+		"src/models",
+		"src/database/migrations",
+		"src/database/seeds",
+		"src/services",
+		"src/helpers",
+		"src/repositories"
+        ],
+        "psr-0": {
+            "Gcphost\\Laravelcp\\": "src/"
+        }
+    },
+    "minimum-stability": "dev"
 }
