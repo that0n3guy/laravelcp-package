@@ -13,7 +13,7 @@
         {
             "url": "https://github.com/that0n3guy/confide.git",
             "type": "git"
-        },
+        }
     ],
     "require": {
         "php": ">=5.3.0",
