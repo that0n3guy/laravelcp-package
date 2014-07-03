@@ -53,6 +53,54 @@ We hope users will extend the application instead of modifying its core componen
 [Read more here](https://github.com/gcphost/l4-bootstrap-admin/wiki/Extending-LaravelCP)
 
 
+#Quick install (the short install is not valid for this package):
+
+Add the following to your Lavavel conposer.json:
+
+    "repositories": [
+        {
+            "url": "https://github.com/that0n3guy/laravelcp-package.git",
+            "type": "git"
+        },
+        {
+            "url": "https://github.com/that0n3guy/confide.git",
+            "type": "git"
+        },
+        {
+            "url": "https://that0n3guy@bitbucket.org/that0n3guy/anvard.git",
+            "type": "git"
+        }
+    ],
+    "require": {
+        "laravel/framework": "4.2.*",
+        "gcphost/laravelcp": "dev-master"
+     },
+
+and
+
+    "prefer-stable": true,
+    "minimum-stability": "dev"
+
+Run composer update
+
+Add this to your config/app.php 
+    
+    'Gcphost\Laravelcp\LaravelcpServiceProvider'
+
+create app/storage/settings.json with something like:
+
+    {"site":{"name":"LaravelCP","bootswatch":"cerulean","theme":"default","contact_email":"gcphost@gmail.com","contact_address":"<strong>Twitter, Inc.<\/strong><br>795 Folsom Ave, Suite 600<br>San Francisco, CA 94107<br><abbr title='Phone'>P:<\/abbr>(123) 456-7890"},"users":{"default_role_id":"2"},"login":{"login_url":"","logout_url":""}}
+
+run the following commands:
+
+    php artisan asset:publish gcphost/laravelcp
+    php artisan migrate --path="vendor/gcphost/laravelcp/src/database/migrations"
+
+    #@todo php artisan db:seed
+
+    php artisan command:install_laravelcp
+
+
 # Short install
 ###Want more detail? Review the original directions at the bottom
 
