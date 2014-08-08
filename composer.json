@@ -15,25 +15,23 @@
             "type": "git"
         }
     ],
-    "require": {
-        "php": ">=5.3.0",
-        "illuminate/support": "4.*",
-        "zizaco/confide": "3.2.3b",
-	"zizaco/entrust": "dev-master",
-	"anlutro/l4-settings": "dev-master",
-	"bllim/datatables": "*",
-	"thomaswelton/laravel-gravatar": "dev-master",
-	"khill/lavacharts" : "dev-master",
-	"regulus/activity-log": "dev-master",
-	"raahul/larryfour": "1.*",
-	"hybridauth/hybridauth": "*",
-	"msurguy/honeypot": "dev-master",
-	"liebig/cron": "dev-master",
-	"atticmedia/anvard": "dev-master",
-	"gcphost/bootstrap3": "dev-master",
-	"pda/pheanstalk": "2.0.*"
-
-    },
+ 	"require": {
+		"laravel/framework": "4.2.*",
+		"zizaco/confide": "~4.0@dev",
+		"zizaco/entrust": "1.2.*@dev",
+		"anlutro/l4-settings": "dev-master",
+		"bllim/datatables": "*",
+		"thomaswelton/laravel-gravatar": "dev-master",
+		"khill/lavacharts" : "dev-master",
+		"regulus/activity-log": "dev-master",
+		"raahul/larryfour": "1.*",
+		"hybridauth/hybridauth": "*",
+		"msurguy/honeypot": "dev-master",
+		"liebig/cron": "dev-master",
+		"atticmedia/anvard": "dev-master",
+		"gcphost/bootstrap3": "dev-master",
+		"pda/pheanstalk": "2.0.*"
+	},
     "autoload": {
         "classmap": [
 		"src/commands",
